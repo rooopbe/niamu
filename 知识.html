@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识点展示</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .container {
+            position: relative;
+            width: 90vw;
+            height: 90vh;
+            min-width: 800px;
+            min-height: 600px;
+        }
+        
+        .center-icon {
+            position: absolute;
+            width: 40vmin;
+            height: 40vmin;
+            left: 50%;
+            top: 32%;
+            transform: translate(-50%, -50%);
+            background-image: url('img/css.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50% 20% / 10% 40%;
+            box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        
+        .knowledge-point {
+            position: absolute;
+            width: 25vmin;
+            padding: 2vmin;
+            background-color: white;
+            border-radius: 1vmin;
+            box-shadow: 0 0 2vmin rgba(0, 0, 0, 0.1);
+            font-size: 2vmin;
+            z-index: 5;
+        }
+        
+        .point-1 {
+            top: 30%;
+            left: 20%;
+            transform: rotate(-5deg);
+        }
+        
+        .point-2 {
+            top: 30%;
+            right: 20%;
+            transform: rotate(5deg);
+        }
+        
+        .point-3 {
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%) rotate(2deg);
+        }
+        
+        .knowledge-point h3 {
+            color: #4CAF50;
+            margin-top: 0;
+            border-bottom: 0.2vmin solid #eee;
+            padding-bottom: 1.5vmin;
+            font-size: 2.5vmin;
+            text-align: center;
+        }
+        
+        .knowledge-point ul {
+            padding-left: 3vmin;
+            list-style-type: none;
+        }
+        
+        .knowledge-point li {
+            margin-bottom: 1.5vmin;
+            color: #555;
+            position: relative;
+            padding-left: 1.5vmin;
+        }
+        
+        .knowledge-point li:before {
+            content: "•";
+            color: #4CAF50;
+            font-size: 2vmin;
+            position: absolute;
+            left: -1vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center-icon"></div>
+        
+        <div class="knowledge-point point-1">
+            <h3>HTML基础和HTML5</h3>
+            <ul>
+                <li>HTML标签与属性</li>
+                <li>HTML5多媒体（视频和音频）</li>
+                <li>HTML5图像标签（画布和SVG）</li>
+                <li>HTML5地理定位</li>
+                <li>HTML5表单</li>
+            </ul>
+        </div>
+        
+        <div class="knowledge-point point-2">
+            <h3>CSS基础和CSS3</h3>
+            <ul>
+                <li>CSS选择器</li>
+                <li>CSS样式</li>
+                <li>定位技术</li>
+                <li>动画效果</li>
+            </ul>
+        </div>
+        
+        <div class="knowledge-point point-3">
+            <h3>高级应用</h3>
+            <ul>
+                <li>CSS预处理器</li>
+                <li>性能优化</li>
+                <li>浏览器兼容</li>
+                <li>CSS架构</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

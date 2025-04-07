@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻资讯</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+            margin: 20px 0;
+        }
+        
+        .news-container {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .main-news {
+            flex: 2;
+        }
+        
+        .hot-news {
+            flex: 1;
+        }
+        
+        .news-item {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .news-item h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .news-images {
+            display: flex;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .news-images img {
+            width: 48%;
+            height: auto;
+            border-radius: 3px;
+        }
+        
+        .author {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            border-top: 1px dashed #ddd;
+            padding-top: 10px;
+        }
+        
+        .hot-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .hot-item:last-child {
+            border-bottom: none;
+        }
+        
+        .hot-item a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .hot-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .hot-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>每日新闻资讯</h1>
+    </header>
+    
+    <hr>
+    
+    <div class="news-container">
+        <div class="main-news">
+            <div class="news-item">
+                <h3>科技创新推动经济发展新动能</h3>
+                <div class="news-images">
+                    <img src="img/c010696a-4597-46c0-a2ef-c0f6e48e2119.png" alt="科技新闻">
+                    <img src="img/1ce59870-1f9c-4758-b6c0-0a2d6030d325.png" alt="科技新闻">
+                </div>
+                <p>近年来，我国科技创新能力显著提升，在人工智能、5G通信、量子计算等领域取得重大突破...</p>
+                <div class="author">记者：张伟 | 发布时间：2023-06-15</div>
+            </div>
+            
+            <div class="news-item">
+                <h3>城市绿化建设成效显著</h3>
+                <div class="news-images">
+                    <img src="img/根据新闻生成配图.png" alt="环境新闻">
+                    <img src="img/d606071b-a43d-465d-83a5-4e1649959c86_1744019202938215472_origin~tplv-a9rns2rl98-image-dark-watermark.png" alt="环境新闻">
+                </div>
+                <p>本市今年新增绿化面积超过50万平方米，公园绿地服务半径覆盖率提高到95%...</p>
+                <div class="author">记者：李芳 | 发布时间：2023-06-14</div>
+            </div>
+            
+            <div class="news-item">
+                <h3>文化产业发展迎来新机遇</h3>
+                <div class="news-images">
+                    <img src="img/1f8c5761-dcc4-4e1e-a03f-861b574c3fc1_1744019291827886519_origin~tplv-a9rns2rl98-web-thumb.jpeg" alt="文化新闻">
+                    <img src="img/cf543488-8996-477a-a4a1-16b050f7e094_1744019292029416596_origin~tplv-a9rns2rl98-web-thumb.jpeg" alt="文化新闻">
+                </div>
+                <p>随着数字技术的快速发展，传统文化产业正在加速数字化转型...</p>
+                <div class="author">记者：王明 | 发布时间：2023-06-13</div>
+            </div>
+        </div>
+        
+        <div class="hot-news">
+            <h4>相关热文推荐</h4>
+            <div class="hot-item">
+                <a href="#">全球气候变化最新研究报告发布</a>
+                <img src="img/Z.jpg" alt="热点新闻">
+            </div>
+            <div class="hot-item">
+                <a href="#">新能源汽车市场持续火爆</a>
+                <img src="img/下载.jpg" alt="热点新闻">
+            </div>
+            <div class="hot-item">
+                <a href="#">数字经济成为就业新引擎</a>
+                <img src="img/OIP.jpg" alt="热点新闻">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
